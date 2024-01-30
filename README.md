@@ -4,19 +4,19 @@
 
 ## Main parts
 
-- *Scheduler:* 
+- **Scheduler:** 
   - Responsible for sending query plan fragments to execute nodes and updating internal task state.
 
-- *Execution engine:* 
+- **Execution engine:** 
   - Executes physical plan operators to retrieve data, process tuples and generate output. Single node only.
 
-- *Catalog service:* 
+- **Catalog service:** 
   - Internal database of data files and table schemas.
 
-- *I/O service and distributed cache:* 
+- **I/O service and distributed cache:** 
   - Provides an access layer to retrieve and cache blocks from data files.
 
-- *Query Optimizer*
+- **Query Optimizer**
   - Generate an efficient physical plan for a SQL statement using rule-based optimizations and cost-based search, take inspiration from `apache arrow datafusion`.
 
 ## Project proposal
